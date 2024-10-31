@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 # SPDX-FileCopyrightText: 2024 Daichi Aida <da1649ichi@gmail.com>
 # SPDX-License-Identifier: BSD-3-Clause
 
@@ -10,7 +10,15 @@ ng () {
 res=0
 
 out=$(seq 5 | ./plus)
-[ "${out}" = 15 ] || ng "LINENO"
+[ "${out}" = 15 ] || ng "$LINENO"
 
-[ "${res}" = 0 ] && echo OK
+out=$(echo あ | ./plus)
+[ "$?" = 1 ]      || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
+out=$(echo | ./plus)
+[ "$?" = 1 ]      || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
+[ "$res" = 0 ] && echo OK
 exit $res

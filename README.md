@@ -20,21 +20,31 @@
 ## 使用方法
 
 はじめに当リポジトリをクローンし、リポジトリに移動してください。
+```
 $ git clone https://github.com/aidadaichi49/robosys2024.git
 $ cd robosys2024
+```
 
 コマンドを実行するときは、以下のように権限を与えてください。
+```
 $ chmod +x alphabet
+```
 
 コマンドを実行する際は以下の形式で文字を入力します
+```
 $ echo "aida" | ./alphabet
+```
 
 ## 実行例
+```
 $ echo "aida" | ./alphabet
 変換結果: AIDA
+```
 
+```
 $ echo "happy" | ./alphabet
 変換結果: HAPPY
+```
 
 ## ライセンス
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．

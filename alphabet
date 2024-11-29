@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Daichi Aida <da1649ichi@gmail.com>
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+input_lines = sys.stdin.read().strip().split("\n")
+
+processed_lines = [line.upper() for line in input_lines]
+
+for line in processed_lines:
+    print("変換結果:",line)

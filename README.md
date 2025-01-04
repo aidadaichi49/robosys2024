@@ -40,12 +40,12 @@ $ echo "aida" | ./alphabet
 ## 実行例
 ```
 $ echo "aida" | ./alphabet
-変換結果: AIDA
+AIDA
 ```
 
 ```
 $ echo "happy" | ./alphabet
-変換結果: HAPPY
+HAPPY
 ```
 
 ## ライセンス

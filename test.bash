@@ -10,7 +10,7 @@ ng () {
 res=0
 
 out=$(echo "aida" | ./alphabet)
-[ "${out}" = "変換結果: AIDA" ] || ng "$LINENO"
+[ "${out}" = "AIDA" ] || ng "$LINENO"
 
 out=$(echo "あ" | ./alphabet)
 [ "$?" = 1 ] || ng "$LINENO"

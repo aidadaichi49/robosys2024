@@ -13,4 +13,4 @@ for line in input_lines:
 processed_lines = [line.upper() for line in input_lines]
 
 for line in processed_lines: 
-    print("変換結果:",line)
+    print(line)
